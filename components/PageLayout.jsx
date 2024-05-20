@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 
 const PageLayout = ({children, title= 'News App'}) => {
@@ -13,7 +14,9 @@ const PageLayout = ({children, title= 'News App'}) => {
         <link rel="icon" href="/favicon.ico" />
         </Head>
         <header>
-            header navbar
+            <Link href='/'> Home </Link>
+            <Link href='/about'> About </Link>
+            
         </header>
         <main className={styles.main}>
             {children}
@@ -36,6 +39,8 @@ const PageLayout = ({children, title= 'News App'}) => {
                 background: black;
                 color:white;
                 margin-bottom:1rem;
+                display:flex;
+                justify-content:space-between;
                 }
             main, footer {
                 margin: 1.5rem;
