@@ -24,13 +24,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-      <style jsx>{`
-        div {
-          display:grid;
-          place-content:center;
-          height: 100vh;
-        }
-      `}</style>
     </div>
   )
 }
